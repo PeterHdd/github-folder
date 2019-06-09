@@ -19,6 +19,10 @@ This vscode extension will automtically create a .github folder that will contai
 
 **Note:** Don't forget to add your username to the specific files.
 
+## Usage
+
+Right click on the explorer space and choose *Create .github folder*
+
 
 ![template-image](images/templateImage.png)
 
