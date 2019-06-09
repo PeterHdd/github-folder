@@ -5,7 +5,11 @@
 	"version": "0.0.1",
 	"publisher": "PeterHdd",
 	"icon":"images/github.png",
-    "license": "SEE LICENSE IN LICENSE.md",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/PeterHdd/github-folder"
+      },
 	"engines": {
 		"vscode": "^1.35.0"
 	},
