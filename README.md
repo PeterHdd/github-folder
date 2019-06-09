@@ -7,6 +7,12 @@
 ![tweet](https://img.shields.io/twitter/url/https/github.com/PeterHdd/github-folder.svg?style=social)
 ![license](https://img.shields.io/github/license/PeterHdd/github-folder.svg)
 
+## Installation
+
+You can either install it from vscode or from the following link:
+
+https://marketplace.visualstudio.com/items?itemName=PeterHdd.github-folder
+
 ## Information
 
 This vscode extension will automtically create a .github folder that will contain the issue template files, codeowner file and code of conduct file.
