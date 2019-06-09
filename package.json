@@ -2,7 +2,7 @@
 	"name": "github-folder",
 	"displayName": "Github Folder",
 	"description": "Generate .github folder with the markdown files",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "PeterHdd",
 	"icon":"images/github.png",
 	"license": "SEE LICENSE IN LICENSE.md",
@@ -16,6 +16,9 @@
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+        "github"
+    ],
 	"activationEvents": [
 		"onCommand:extension.github"
 	],
