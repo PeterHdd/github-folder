@@ -2,14 +2,14 @@
 	"name": "github-folder",
 	"displayName": "Github Folder",
 	"description": "Generate .github folder with the markdown files",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "PeterHdd",
-	"icon":"images/github.png",
+	"icon": "images/github.png",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/PeterHdd/github-folder"
-      },
+		"type": "git",
+		"url": "https://github.com/PeterHdd/github-folder"
+	},
 	"engines": {
 		"vscode": "^1.35.0"
 	},
@@ -17,24 +17,28 @@
 		"Other"
 	],
 	"keywords": [
-        "github"
-    ],
+		"github"
+	],
 	"activationEvents": [
 		"onCommand:extension.github"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-		  "command": "extension.github",
-		  "title": "Create .github folder"
-		}],
+		"commands": [
+			{
+				"command": "extension.github",
+				"title": "Create .github folder"
+			}
+		],
 		"menus": {
-		  "explorer/context": [{
-			"command": "extension.github",
-			"group": "navigation"
-		  }]
+			"explorer/context": [
+				{
+					"command": "extension.github",
+					"group": "navigation"
+				}
+			]
 		}
-	  },
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
@@ -48,5 +52,9 @@
 		"tslint": "^5.12.1",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/mkdirp": "^0.5.2",
+		"mkdirp": "^0.5.1"
 	}
 }
