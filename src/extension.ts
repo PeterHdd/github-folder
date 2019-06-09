@@ -1,4 +1,4 @@
-import { commands, workspace, ExtensionContext } from 'vscode';
+import { commands, workspace, ExtensionContext, window } from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as mkdirp from 'mkdirp';
@@ -15,27 +15,42 @@ export function activate(context: ExtensionContext) {
 		const templatePath = path.join(githubPath, 'ISSUE_TEMPLATE');
 		mkdirp(templatePath,(err) => {
 			if (err)
-			throw err;
+			{
+				window.showErrorMessage(err.message);
+				throw err;
+			}
 			else
 			{
 			fs.writeFile(templatePath +'/bug_report.md',data.bugData, (err) => {
-				if (err) throw err;
-				console.log(err);
+				if (err)
+				{
+					window.showErrorMessage(err.message);
+					throw err;
+				}
 				console.log('The file has been saved!');
 				});
 			fs.writeFile(templatePath +'/feature_request.md',data.featureData, (err) => {
-				if (err) throw err;
-				console.log(err);
+				if (err)
+				{
+					window.showErrorMessage(err.message);
+					throw err;
+				}
 				console.log('The file has been saved!');
 				});
 			fs.writeFile(githubPath +'/CODEOWNERS',data.codeOwners, (err) => {
-				if (err) throw err;
-				console.log(err);
+				if (err)
+				{
+					window.showErrorMessage(err.message);
+					throw err;
+				}
 				console.log('The file has been saved!');
 				});
 			fs.writeFile(githubPath +'/CODE_OF_CONDUCT.md',data.codeOFConduct, (err) => {
-				if (err) throw err;
-				console.log(err);
+				if (err)
+				{
+					window.showErrorMessage(err.message);
+					throw err;
+				}
 				console.log('The file has been saved!');
 				});
 			}
