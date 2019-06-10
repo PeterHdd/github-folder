@@ -1,5 +1,5 @@
 # GITHUB FOLDER
-## Automtically generate the .github folder
+## Automatically generate the .github folder
 -------------------
 [![Version](https://vsmarketplacebadge.apphb.com/version/peterhdd.github-folder.svg)](https://marketplace.visualstudio.com/items?itemName=PeterHdd.github-folder)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/peterhdd.github-folder.svg)](https://marketplace.visualstudio.com/items?itemName=peterhdd.firebase-firestore-snippets)
@@ -15,7 +15,7 @@ https://marketplace.visualstudio.com/items?itemName=PeterHdd.github-folder
 
 ## Information
 
-This vscode extension will automtically create a .github folder that will contain the issue template files, codeowner file and code of conduct file.
+This vscode extension will automatically create a .github folder that will contain the issue template files, codeowner file and code of conduct file.
 
 **Note:** Don't forget to add your username to the specific files.
 
